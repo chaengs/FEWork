@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+/* util */
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+/* style */
+body {
+    background: #5B2386;
+    color: #ffffff;
+}
+section {
+    text-align: center;
+    margin: 30px auto;
+}
+p {
+    padding: 5px 0;
+}
+button {
+    border: none;
+    margin: 30px 10px;
+}
+input {
+    border-radius: 7px;
+    border: none;
+    background: #ffffff;
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    color: #BABCBE;
+    text-align: center;
+}
+header {
+    position: relative;
+}
+
+/* 수정 시작 */
+/* 
+    header가 자식 높이를 인식하지 못해서
+    높이를 직접 설정해주었습니다.
+*/
+header {
+    position: relative;
+    height: 265px;
+    margin-top: 120px;
+}
+
+/* 중복되는 속성은 이렇게 함께 정의할 수 있습니다. */
+header .img-title, header .img-clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+   z-index는 .img-title에게만 부여해도 될 것 같아요.
+*/
+.img-title {
+    width: 564px;
+    z-index: 1;
+}
+
+.img-clock {
+    width: 225px;
+}
+
+/* section - main-desc */
+/* section에 스타일을 주기 위해 클래스를 추가하였어요. */
+/* flex를 사용해서 자식 요소들을 정렬하였습니다. */
+.main-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.msg {
+    font-family: 'OTEnjoystoriesBA';
+    font-size: 36px;
+    font-weight: 700;
+    color: #F5DF4D;
+}
+.job {
+    width: 228px;
+    height: 57px;
+}
+.time {
+    width: 114px;
+    height: 57px;
+}
+.txt-info {
+    font-family: 'GmarketSansMedium';
+    font-size: 18px;
+}
+.btn-wrap{
+    display: flex;
+    justify-content: center;
+}
+.btn-result, .btn-training, .btn-share {
+    font-family: 'GmarketSansBold';
+    /* font-weight: bold; */
+    font-size: 24px;
+    line-height: 24px;
+    color: #5B2386;
+}
+.txt-info strong {
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+}
+.btn {
+    padding: 21px 49px;
+}
+.btn-result, .btn-training {
+    background: #fcee21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+}
+.btn-result::after {
+    display: block;
+    content: url(../img/click.png);
+    transform: rotate(-19.08deg);
+    position: absolute;
+    right: 27%;
+    height: 0;
+    Width: 33.85px;
+}
+.btn-share {
+    /* background: #ffffff; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    color: #5B2386;
+}
+.txt-desc, .cont-result {
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+.cont-result strong {
+    font-family: 'GmarketSansBold';
+    font-size: 72px;
+    line-height: 72px;
+}
+.img-footer, .txt-footer {
+    padding-top: 10px;
+    font-family: 'Noto Sans KR';
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+}
+
+/* media query */
+@media screen and (max-width:375px){
+    .cont-result strong {
+        font-size: 50px;
+    }
+}
