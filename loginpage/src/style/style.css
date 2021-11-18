@@ -1,0 +1,29 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    src: url(../font/SpoqaHanSansNeo-Regular.otf);
+}
+
+form {
+    width: 520px;
+    height: 712px;
+    text-align: center;
+}
+.tit {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.line {
+    width: 528px;
+    height: 1px;
+    background: #c4c4c4;
+}
+.tit-msg {
+    font-family: 'Spoqa Han Sans Neo';
+}
+.input-wrap .login {
+    width: 472px;
+    height: 50px;
+}

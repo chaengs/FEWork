@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+<body>
+    <form class="form-wrap" action="submit">
+        <h1 class="tit">로그인 또는 회원가입</h1>
+        <img src="" alt="">
+        <div class="line"></div>
+        <p class="tit-msg">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+        <div class="input-wrap">
+            <label for="id" class="blind"></label>
+            <input type="text" id="id" placeholder="아이디" class="login">
+            <label for="pwd" class="blind"></label>
+            <input type="password" id="pwd" placeholder="비밀번호" class="login">
+            <label for="login-status" class="blind"></label>
+            <input type="checkbox" id="login-status"> 로그인 상태 유지
+        </div>
+        <button type="submit">로그인</button>
+        <div class="link-wrap">
+            <a href="#">회원가입</a>
+            <a href="#">아이디/비밀번호 찾기</a>
+        </div>
+        <p>또는</p>
+        <div class="line"></div>
+        <div class="sns">
+            <button type="button" class="btn btn-google">구글 계정으로 로그인</button>
+            <button type="button" class="btn btn-facebook">페이스북 계정으로 로그인</button>
+            <button type="button" class="btn btn-naver">네이버 계정으로 로그인</button>
+            <button type="button" class="btn btn-kakao">카카오 계정으로 로그인</button>
+        </div>
+    </form>
+</body>
+</html>
