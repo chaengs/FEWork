@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+#app {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.machine, .info {
+    box-sizing: border-box;
+    width: 360px;
+    height: 545px;
+    background-color: #FFFFFF;
+}
+
+.list-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.list-menu li {
+    width: 94px;
+    height: 130px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+.list-menu li .btn-menu img {
+    width: 36px;
+    margin: 0px auto;
+}
